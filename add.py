@@ -17,7 +17,9 @@ while True :
 		x+=1
 
 		r = requests.post('https://api.faucetpay.io/wallet/link-address', headers=head, json={"coin": "TRX", "label": "TRONGG " + str(x), "address": str(walet)})
-        time.sleep(10)
-        print(str(walet) + ' Wallet Ke ' + str(x))
+		
+		time.sleep(10)
+		
+		print(str(walet) + ' Wallet Ke ' + str(x))
     else :
 		print('SUDAH HABIS')
